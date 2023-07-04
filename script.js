@@ -6,5 +6,7 @@ function updateclock() {
 	const minutes = currTime.getMinutes();
 	const seconds = currTime.getSeconds();
 
-	
+
+	var clockDiv = document.getElementById("clock");
+	clockDiv.textContent = hours + ":" + minutes + ":" + seconds + " " + period;
 }
