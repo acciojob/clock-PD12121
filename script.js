@@ -1,5 +1,5 @@
 //your JS code here. If required.
-
+updateclock();
 function updateclock() {
 	const currTime = new Date();
 	const hours = currTime.getHours();
@@ -21,4 +21,5 @@ function updateclock() {
 	var clockDiv = document.getElementById("clock");
 	clockDiv.textContent = hours + ":" + minutes + ":" + seconds + " " + period;
 }
+	export default updateclock();
 setInterval(updateClock, 1000);
